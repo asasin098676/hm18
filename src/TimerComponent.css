@@ -1,0 +1,37 @@
+.minute {
+  background-color: #ffb451cf;
+}
+.second {
+  background-color: #d1f793;
+}
+
+.minute,
+.second {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mainDiv {
+  width: 600px;
+  margin-left: 330px;
+}
+h3 {
+  margin-left: 6px;
+}
+.fixet {
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+}
+button {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+  background-color: #00a4ff54;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+}
