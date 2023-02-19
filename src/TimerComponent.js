@@ -60,9 +60,14 @@ class TimerComponent extends Component {
   }
   //render
   render() {
+    let start =
+      this.state.time == 0 || this.state.isOn == false ? (
+        <button onClick={this.startTimer.bind(this)}>start</button>
+      ) : null;
+
     return (
       <div className="mainDiv">
-        <button onClick={this.startTimer.bind(this)}>start</button>
+        {start}
         <button onClick={this.stopTimer.bind(this)}>pause</button>
         <div style={{ width: this.state.minute + "%" }} className="minute">
           <div className="fixet">
